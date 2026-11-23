@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Added to silence the CSS linter's "unknown property" warnings */
+/* stylelint-disable */
+
+.floating-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(6deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(6deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(6deg);
+    }
+}
+
+.floating-badge-1 {
+    animation: floatBadge1 4s ease-in-out infinite;
+}
+
+@keyframes floatBadge1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-badge-2 {
+    animation: floatBadge2 5s ease-in-out infinite;
+}
+
+@keyframes floatBadge2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
